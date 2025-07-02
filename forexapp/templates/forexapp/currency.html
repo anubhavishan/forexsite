@@ -1,0 +1,59 @@
+{% extends "forexapp/base.html" %}
+{% load static %}
+{% block content %}
+<div style="background-color:rgb(168, 240, 159);">
+<h1 style="font-family:sans-serif; font-weight: bold">Currency Pairs</h1></div><br><br>
+<div >
+<h5>When you trade in the forex market, you buy or sell in currency pairs.</h5><br>
+<h5>An exchange rate is the relative price of two currencies from two different countries.<br>
+
+Exchange rates fluctuate based on which currency is stronger at the moment.</h5><br>
+</div>
+<div><h5 >
+    There are three categories of currency pairs:<br><br>
+    <ul>
+    <li>The “majors“</li>
+    <li>The “crosses“</li>
+    <li>The “exotics“</li>
+    </ul>
+
+</h5><br></div>
+
+<div style="background-color:rgb(168, 240, 159);"><h5> ♾️ MAJORS</h5></div><br>
+<h5> These pairs all contain the U.S. dollar (USD) on one side and are the most frequently traded.<br>
+     There are only SEVEN major currency pairs.</h5><br><br>
+      <div >
+ <img src="{% static 'forexapp/img5.png' %}" alt="Forex Image" width="600" height="300" >
+  </div><br><br>
+
+  <div style="background-color:rgb(168, 240, 159);"><h5> ♾️ CROSSES</h5></div><br>
+  <h5>Currency pairs that include any two of the major currencies except the
+     U.S. dollar are known <br>as cross-currency pairs or simply as the “crosses.”</h5><br><br>
+     <div >
+ <img src="{% static 'forexapp/img6.png' %}" alt="Forex Image" width="600" height="300" >
+  </div><br><br>
+
+     <div style="background-color:rgb(168, 240, 159);"><h5>♾️ EXOTICS</h5></div><br>
+     <h5>An exotic currency is a currency from countries with developing or emerging markets.<br>
+         These currencies are often used in forex trading because they are less volatile than major currencies.</h5><br><br>
+
+<h5>Exotic currency pairs are made up of one major currency paired with the currency of an emerging economy, <br>
+    such as Brazil, Mexico, Indonesia, Poland, Chile, Turkey, or Hungary.</h5><br>
+
+    <div >
+ <img src="{% static 'forexapp/img7.png' %}" alt="Forex Image" width="600" height="300" >
+  </div><br><br>
+
+    <div style="background-color:rgb(168, 240, 159);"> <h5>♾️ SYMBOL</h5></div><br><div >
+ <img src="{% static 'forexapp/img8.png' %}" alt="Forex Image" width="600" height="300" >
+  </div>
+
+     
+  <p style="font-size:20px">For example, the current exchange rate from US dollars to Euros is 0.92, commonly written as USD/EUR = 0.92, <br>
+    which means that each 1 US dollar (USD) is equivalent to 0.92 Euros (EUR). So, if you have 100 USD, you can get 92 Euros. </p>
+
+  <h5 style="color:rgb(45, 37, 86)"> NOTE : The first two letter in symbol USD represents Country name and the last character represents currency of that country.</h5>
+
+
+{% endblock %}
+

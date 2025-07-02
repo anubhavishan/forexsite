@@ -1,0 +1,25 @@
+
+
+{% extends "forexapp/base.html" %}
+{% load static %}
+{% block content %}
+<div class="text-center">
+    {% comment %} <h1 style="font-family: 'Bradley Hand ITC'; font-weight: bold; margin-top: 10px;">
+  <b>Welcome to</b> 
+  <span class="text-default">Forex<span style="color: limegreen;">PIPS</span></span>
+</h1> {% endcomment %}
+  <h1 style="font-family:sans-serif; font-weight: bold">Welcome to <span class="text-default">Forex<span style="color: limegreen;">PIPS</span></span></b></h1>
+
+  <p class="lead" style="color:rgb(27, 98, 142) ; font-family:sans-serif ; font-weight: bold">Master the art of forex trading with simple guides and powerful tools.</p>
+  {% comment %} <img src="https://img.freepik.com/free-vector/financial-data-analysis-illustration_23-2148819609.jpg" alt="Forex" class="img-fluid my-4" style="max-height: 250px;"> {% endcomment %}
+  <div style="margin-left: 80px">
+ <img src="{% static 'forexapp/pips.png' %}" alt="Forex Image" width="900" height="300" >
+  </div>
+
+
+  <div class="mt-4">
+    <a href="/education/" class="btn btn-success btn-lg">Start Learning</a>
+    <a href="/tools/" class="btn btn-outline-dark btn-lg">Use Tools</a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,162 @@
+{% extends "forexapp/base.html" %}
+{% load static %}
+{% block content %}
+<div>
+    <h1 style="font-family:sans-serif; font-weight: bold ; font-size: 20px">
+      <span style="font-size: 40px">  What is forex? </span><br></h1><br>
+      <p style="font-family:sans-serif; font-weight: bold ; font-size: 20px; color:grey">
+        Forex is a global finacial market where different currency pairs are traded.<br>
+        Forex trading is a type of trading that involves buying and selling currency pairs.<br>
+        The foreign exchange market, which is usually known as “forex” or “FX,” <br>
+        is the largest financial market in the world.
+        The FX market is a global, decentralized market where the world’s currencies change hands.&nbsp;<br>
+        <br>
+
+        <span style="color: grey">Due to the wide range of market participants, including central banks,<br>
+             financial institutions, corporations, hedge funds, and individual traders, exchange rates change<br>
+              by the second so the market is constantly in flux.
+        It is more volatile than any other market and requires a lot of risk management.<br></span><br>
+
+        It's daily volume is around 6-7 trillion US dollars.<br>
+        A currency of a country represents it's GDP and the difference between two countries are represented through the currency pair.<br>
+
+    </p>
+    <div > <br>
+ <img src="{% static 'forexapp/img2.png' %}" alt="Forex Image" width="500" height="300" >
+  </div><br>
+
+  <p style="font-family:sans-serif; font-weight: bold ; font-size: 20px">The forex market is open 24 hours a day and 5 days a week, only closing down during the weekend</p>
+
+</div><br><br><br>
+
+
+  <style>
+    {% comment %} body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color:rgb(160, 154, 154);
+    } {% endcomment %}
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #2980b9;
+      margin-top: 30px;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 20px;
+    }
+    .section {
+      background:rgb(225, 239, 224);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
+    }
+  </style> 
+
+
+<div style="border:3px solid black; color:rgb(21, 14, 64); width: 100%; background-color:white;"><br>
+    <h2>&nbsp;🌍 1. History of Forex Trading</h2>
+&nbsp;<h6>&nbsp;&nbsp;Forex trading is the largest financial market in the world. Its history is rich and evolved over centuries:</h6><br>
+
+<h3>&nbsp;⚙️ Ancient Beginnings</h3><br>
+&nbsp;<h6>&nbsp;&nbsp;Barter System (Prehistoric times): Goods were exchanged directly.
+
+&nbsp;&nbsp;Coinage (6th century BC): First currencies appeared in Lydia (modern-&nbsp;&nbsp;day Turkey).
+
+&nbsp;&nbsp;Roman Empire: Introduced more standardized coinage &nbsp;&nbsp;systems.</h6><br>
+
+<h3>&nbsp;🏦 Gold Standard (1870s – 1914)</h3><br>
+&nbsp;<h6>&nbsp;&nbsp;Countries pegged their currencies to gold.
+
+Encouraged stability in  currency values and international trade.
+
+&nbsp;&nbsp;Collapsed during World War I as countries &nbsp;&nbsp;needed to print more money.</h6><br>
+
+<h3>&nbsp;💱 Bretton Woods System (1944 – 1971)</h3><br>
+&nbsp;<h6>&nbsp;&nbsp;After WWII, major nations met in Bretton Woods, USA.
+
+&nbsp;&nbsp;Created fixed &nbsp;&nbsp;exchange rates pegged to the US Dollar, which was convertible&nbsp;to&nbsp;&nbsp;gold.
+
+&nbsp;&nbsp;Created IMF (International Monetary Fund) and World Bank.
+
+&nbsp;&nbsp;Ended in 1971 when the US abandoned the gold standard under &nbsp;&nbsp;President Nixon.</h6><br>
+
+<h3>&nbsp;📈 Modern Forex Market (1971 – Present)</h3><br>
+&nbsp;<h6>&nbsp;&nbsp;Floating Exchange Rates: Currencies now fluctuate freely.
+
+Electronic Trading began in the 1990s, allowing individuals to trade forex online.
+
+24-hour &nbsp;&nbsp;forex Market: Forex became a decentralized global market.<br></h6><br></div>
+
+
+{% comment %}  {% endcomment %}
+
+
+<br><br><br>
+<h2>&nbsp;How Forex Trading Works</h2>
+
+  <div class="section">
+    <h3>🏦 a) The Market</h3>
+    <p><strong>Decentralized & OTC (Over-the-Counter):</strong> No central exchange like stock markets.</p>
+    <p><strong>Major Players:</strong> Central banks, commercial banks, hedge funds, corporations, and individual retail traders.</p>
+  </div>
+
+  <div class="section">
+    <h3>🌐 b) Trading Pairs</h3>
+    <p>Forex is traded in <strong>currency pairs</strong> like:</p>
+    <ul>
+      <li><strong>EUR/USD</strong> – Euro vs US Dollar</li>
+      <li><strong>GBP/JPY</strong> – British Pound vs Japanese Yen</li>
+    </ul>
+    <p>The first is the <strong>base currency</strong>, and the second is the <strong>quote currency</strong>.</p>
+    <p><strong>Example:</strong> If EUR/USD = 1.1000, then 1 Euro = 1.10 USD.</p>
+  </div>
+
+  <div class="section">
+    <h3>🔄 c) Types of Forex Markets</h3>
+    <ul>
+      <li><strong>Spot Market:</strong> Immediate exchange of currency.</li>
+      <li><strong>Forward Market:</strong> Contracts to exchange in the future at agreed rates.</li>
+      <li><strong>Futures Market:</strong> Standardized contracts traded on exchanges.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>📊 d) Price Movement</h3>
+    <p>Currency prices are influenced by:</p>
+    <ul>
+      <li>Interest rates</li>
+      <li>Economic indicators (e.g., GDP, unemployment)</li>
+      <li>Political stability</li>
+      <li>News and market sentiment</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h3>📈 e) Trading Platforms</h3>
+    <p>Traders use platforms like <strong>MetaTrader 4 (MT4)</strong> or <strong>MetaTrader 5 (MT5)</strong>.</p>
+    <p>Brokers provide access to the forex market via these platforms.</p>
+  </div>
+
+  <div class="section">
+    <h3>🔧 f) Leverage and Margin</h3>
+    <p>Forex is often traded using <strong>leverage</strong> (borrowed money).</p>
+    <p><strong>Margin</strong> is the deposit required to open a leveraged position.</p>
+    <p><strong>Example:</strong> 100:1 leverage means you can control $10,000 with just $100.</p>
+  </div>
+
+  <div class="section">
+    <h3>📉 g) Types of Orders</h3>
+    <ul>
+      <li><strong>Market Order:</strong> Buy/sell instantly at the current price.</li>
+      <li><strong>Limit Order:</strong> Buy/sell at a specific price.</li>
+      <li><strong>Stop Loss / Take Profit:</strong> Automatically close trades at certain loss or profit levels.</li>
+    </ul>
+  </div>
+
+{% endblock %}

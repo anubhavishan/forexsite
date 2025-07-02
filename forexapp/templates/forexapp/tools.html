@@ -1,0 +1,62 @@
+{% extends "forexapp/base.html" %}
+{% block content %}
+<h2 class="text-success mb-4">Forex Tools</h2>
+
+<!-- 🔹 Live Chart Section -->
+<div class="mb-5">
+  <h4>📉 Live EUR/USD Forex Chart</h4>
+  <div class="tradingview-widget-container">
+    <div id="tradingview_chart" style="height: 400px;"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        "width": "100%",
+        "height": 400,
+        "symbol": "FX:EURUSD",
+        "interval": "D",
+        "timezone": "Etc/UTC",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "container_id": "tradingview_chart"
+      });
+    </script>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- 🔹 Currency Converter Section -->
+<div>
+  <h4>💱 Currency Converter</h4>
+  <form method="get" class="row g-3">
+    <div class="col-md-3">
+      <label for="amount" class="form-label">Amount</label>
+      <input type="number" step="0.01" name="amount" class="form-control" required>
+    </div>
+    <div class="col-md-3">
+      <label for="from_currency" class="form-label">From (e.g., USD)</label>
+      <input type="text" name="from_currency" class="form-control" required>
+    </div>
+    <div class="col-md-3">
+      <label for="to_currency" class="form-label">To (e.g., INR)</label>
+      <input type="text" name="to_currency" class="form-control" required>
+    </div>
+    <div class="col-md-3 d-grid">
+      <label class="form-label invisible">Convert</label>
+      <button type="submit" class="btn btn-primary">Convert</button>
+    </div>
+  </form>
+
+  {% if converted %}
+    <div class="alert alert-info mt-4">
+      <strong>Result:</strong> {{ amount }} {{ from_currency.upper }} = <strong>{{ converted }}</strong> {{ to_currency.upper }}
+    </div>
+  {% elif amount %}
+    <div class="alert alert-danger mt-4">
+      Could not fetch exchange rate. Please try again.
+    </div>
+  {% endif %}
+</div>
+{% endblock %}
